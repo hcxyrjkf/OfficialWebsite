@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+  "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+  "http://struts.apache.org/dtds/struts-2.0.dtd">
+  
+<struts>
+<!--  <constant name="struts.enable.DynamicMethodInvocation" value="true" />-->
+<constant name="struts.i18n.encoding" value="UTF-8"></constant>
+  <constant name="struts.objectFactory" value="spring"/>
+  <constant name="struts.multipart.maxSize" value="10240000000"/>
+<!-- 若package加上namespace属性，则jsp页面form 的action属性必需加上项目名称的路径-->
+<package name="com.webTest.Action" extends="struts-default" namespace="/">
+	<action name="userAction" class="userAction" method="getUserList" >
+		<result name="success">/loginsuccess.jsp</result>
+		<result name="login">/login.jsp</result>
+	</action>
+<!-- 	<action name="filecAction" class="filecAction" method="execute">
+    	<result name="end">/success.jsp</result>
+    	<param name="savePath">/filecAction</param>  
+    	<param name="maximumSize">204800000</param>
+  	</action>   -->
+  		<action name="filecAction_*" class="filecAction" method="{1}">
+  		<result name="success">/loginsuccess.jsp</result>
+    	<result name="end">/success.jsp</result>
+    	<param name="savePath">/filecAction</param>  
+    	
+  	</action>      
+  	
+</package>
+</struts>

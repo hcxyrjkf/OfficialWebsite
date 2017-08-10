@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.webTest.Bean">
+    <class name="Category" table="categorytable">
+        <id name="categoryId" column="categoryId">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="category" type="java.lang.String"/>
+    </class>
+ 
+</hibernate-mapping>
