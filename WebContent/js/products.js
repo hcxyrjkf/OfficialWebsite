@@ -21,29 +21,70 @@ $(function () {
     })
 
 
-    //椤圭洰灞曠ず
-    //var iframe=$('iframe')
-    //$('.play').on('click',function(){
-    //    //for( var i=0;i<iframe.length;i++){
-    //    //   iframe.attr('src', 'img/product'+i+'.jpg');
-    //    //}
-    //    $('.color').addClass('colorss')
-    //    $('.close').css('display','block');
-    //    $(this).next().addClass('big')
-    //    $('.big').attr('src','unit3d/11111.html');
-    //    //$(this).next().attr('src','unit3d/333/333.html');
-    //})
-    //
-    //$('.color .close').on('click',function(){
-    //    $('.color').removeClass('colorss')
-    //    $('.close').css('display','none');
-    //    iframe.removeClass('big')
-    //    $('.product_list iframe').attr('src','img/product0.jpg')
-    //    $('.product_list1 iframe').attr('src','img/product1.jpg')
-    //
-    //
-    //})
+    function myBrowser(){
+        var userAgent = navigator.userAgent; //取得浏览器的userAgent字符串
+        var isOpera = userAgent.indexOf("Opera") > -1;
+        if (isOpera) {
+            return "Opera"
+        }; //判断是否Opera浏览器
+        if (userAgent.indexOf("Firefox") > -1) {
+            return "FF";
+        } //判断是否Firefox浏览器
+        if (userAgent.indexOf("Chrome") > -1){
+            return "Chrome";
+        }
+        if (userAgent.indexOf("Safari") > -1) {
+            return "Safari";
+        } //判断是否Safari浏览器
+        if (userAgent.indexOf("compatible") > -1 && userAgent.indexOf("MSIE") > -1 && !isOpera) {
+            return "IE";
+        }; //判断是否IE浏览器
+    }
 
+    //以下是调用上面的函数
+    var mb = myBrowser();
+    if ("IE" == mb) {
+//         alert("我是 IE");
+        $.ajax({
+            type:"POST",
+            url:"filecAction_filecWebList",
+            dataType:"json",
+            success: function(msg){
+//               var data = eval("("+msg+")");
+                $(msg).each(function(i,v){
+             	   if(i%2==0){
+             		   console.log(i)
+             	  	   $('.color').append("<div class=\"product_list\">"
+                                +"<div class=\"product_box\">"
+                                +"<div class=\"list\">"
+                                +"<span>"+v.id+"</span>"
+                                +"<h2>"+v.fileTitle+"</h2>"
+                                +"<p>"+v.fileContent+"</p>"
+                                +"</div>"
+                                +"<div class=\"shows\">"
+                                +"<div class=\"play\" value="+v.path+">"+"</div>"
+                                +"<img src=\"img/product0.jpg\" alt=\"\">"
+                                +"</div>"
+                                +"</div>"
+                                + "</div>");
+                 	   $('.play').on('click',function(){
+                 	       var val=$(this).attr('value')
+                 	       $('.openIframe').css('display','block');
+                 	       $('.color').addClass('colorss')
+                 	       $('.close').css('display','block');
+                 	       $('iframe').attr('src',"http://localhost:8080/webTest/"+val);
+                 	   })
+             	   }
+           
+                })
+            },
+            error:function(data){
+                 alert("0")
+            }
+        })
+
+    }
+ 
     
        $.ajax({
            type:"POST",
@@ -52,30 +93,30 @@ $(function () {
            success: function(msg){
 //              var data = eval("("+msg+")");
                $(msg).each(function(i,v){
-            	   $('.color').append("<div class=\"product_list\">"
-                           +"<div class=\"product_box\">"
-                           +"<div class=\"list\">"
-                           +"<span>"+v.id+"</span>"
-                           +"<h2>"+v.fileTitle+"</h2>"
-                           +"<p>"+v.fileContent+"</p>"
-                           +"</div>"
-                           +"<div class=\"shows\">"
-                           +"<div class=\"play\" value="+v.path+">"+"</div>"
-                           +"<img src=\"img/product0.jpg\" alt=\"\">"
-                           +"</div>"
-                           +"</div>"
-                           + "</div>");
-            	   $('.play').on('click',function(){
-            	       var val=$(this).attr('value')
-            	       $('.openIframe').css('display','block');
-            	       $('.color').addClass('colorss')
-            	       $('.close').css('display','block');
-            	       $('iframe').attr('src',"http://localhost:8080/webTest/"+val);
-            	   })
-//            	   var a="unit3d\\"+v.id+"\\"+v.id+".html";
-//                   $('iframe').attr('src',a);
-//                   $("span").text(v).appendTo(".product_list .list");
-//                   $('h2').html( v.id).appendTo(".product_list .list");
+            	   if(i%2==1){
+            		   console.log(i)
+            	  	   $('.color').append("<div class=\"product_list\">"
+                               +"<div class=\"product_box\">"
+                               +"<div class=\"list\">"
+                               +"<span>"+(v.id)/2+"</span>"
+                               +"<h2>"+v.fileTitle+"</h2>"
+                               +"<p>"+v.fileContent+"</p>"
+                               +"</div>"
+                               +"<div class=\"shows\">"
+                               +"<div class=\"play\" value="+v.path+">"+"</div>"
+                               +"<img src=\"img/product0.jpg\" alt=\"\">"
+                               +"</div>"
+                               +"</div>"
+                               + "</div>");
+                	   $('.play').on('click',function(){
+                	       var val=$(this).attr('value')
+                	       $('.openIframe').css('display','block');
+                	       $('.color').addClass('colorss')
+                	       $('.close').css('display','block');
+                	       $('iframe').attr('src',"http://localhost:8080/webTest/"+val);
+                	   })
+            	   }
+          
                })
            },
            error:function(data){
