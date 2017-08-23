@@ -21,7 +21,6 @@ update:2015-10-16;
 }
 
 .header {
-    /*position: fixed;*/
     position: absolute;
     top: 0;
     left: 0;
@@ -36,11 +35,9 @@ update:2015-10-16;
     top: 0;
     right: 0;
 }
-
 .header .nav_list a:hover {
     text-decoration: none;
 }
-
 .header .nav_li {
     float: left;
     width: 162px;
@@ -257,6 +254,9 @@ update:2015-10-16;
     /*background-color: blue;*/
     margin: 0 auto;
 }
+.top-header .media ul{
+    display: none;
+}
 .top-header .header_box span{
     border-left:none;
     display: inline-block;
@@ -289,6 +289,8 @@ update:2015-10-16;
 .colors{
     background: #282830;
 }
+
+
 .top-header .media ul{
     display:none;
 }
@@ -298,13 +300,16 @@ update:2015-10-16;
 .top-header .media ul li{
     display: none;
 }
+.top-header .media ul li #as{
+    display: inline-block;
+    display: none;
+}
 .top-header .media ul li div{
     display: none;
 }
 @media screen and (max-width: 780px){
     .top-header .header_box{
         display: none;
-        /*background: red;*/
     }
     .mianbaoxie{
         width: 30px;
@@ -318,7 +323,6 @@ update:2015-10-16;
         position: relative;
     }
     .top-header .media ul{
-        /*display: block;*/
         width: 100%;
         height: auto;
         background: rgba(0,0,0,.9);
@@ -331,6 +335,9 @@ update:2015-10-16;
         text-align: center;
         line-height: 80px;
         font-size: 20px;
+    }
+    .top-header .media ul li a{
+        display: none;
     }
     .top-header .media ul li div{
         display: inline-block;

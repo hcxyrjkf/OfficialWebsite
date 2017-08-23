@@ -2,7 +2,6 @@ body {
 
     font: 12px/1.5 tahoma, arial, \5FAE\8F6F\96C5\9ED1, sans-serif;
     font-family: "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
-    /*background: red;*/
 }
 
 body, div, p, ul, ol, li, dl, dt, dd, h1, h2, h3, h4, p, table, input {
@@ -240,40 +239,30 @@ img {
     -webkit-animation: opacity .5s 1s linear both;
 }
 
-/*.product_list .shoulei .bg_box{background-image: url('../img/bg_1.jpg');}
-.product_list .shoulei .bg_main{background-image: url('../img/main_1.jpg');}*/
 .shoulei .btn_product {
     border-color: #62615d;
     border-color: rgba(0, 0, 0, 0.6);
     color: #000;
 }
 
-/*.product_list .xnet .bg_box{background-image: url('../img/bg_2.jpg');}
-.product_list .xnet .bg_main{background-image: url('../img/main_2.jpg');}*/
 .xnet .btn_product {
     border-color: #88b1eb;
     border-color: rgba(255, 255, 255, 0.3);
     color: #fff;
 }
 
-/*.product_list .member .bg_box{background-image: url('../img/bg_3.jpg');}
-.product_list .member .bg_main{background-image: url('../img/main_3.jpg');}*/
 .member .btn_product {
     border-color: #b3a38b;
     border-color: rgba(255, 255, 255, 0.3);
     color: #fff;
 }
 
-/*.product_list .xkn .bg_box{background-image: url('../img/bg_4.jpg');}
-.product_list .xkn .bg_main{background-image: url('../img/main_4.jpg');}*/
 .xkn .btn_product {
     border-color: #7e7a60;
     border-color: rgba(0, 0, 0, 0.5);
     color: #000;
 }
 
-/*.product_list .xav .bg_box{background-image: url('../img/bg_5.jpg');}
-.product_list .xav .bg_main{background-image: url('../img/main_5.jpg');}*/
 .xav .btn_product {
     border-color: #a1b3cb;
     border-color: rgba(255, 255, 255, 0.5);
@@ -468,7 +457,6 @@ img {
 
 .big_view .product_btns .btns_box a span {
     height: 68px;
-    /*background-image: url('../img/ic_l/ic_spr.png');*/
     background: url("../img/yuandian1.png") no-repeat center;
     background-size: 25px;
 }
@@ -631,7 +619,6 @@ img {
 
 .mid_view .product_btns .btns_box a span {
     height: 55px;
-    /*background-image: url('../img/ic_m/ic_spr.png');*/
     background: url("../img/yuandian1.png") no-repeat center;
     background-size: 20px;
 }
@@ -1174,20 +1161,17 @@ img {
 .yewu_box {
     width: 100%;
     height: 800px;
-    /*background: pink;*/
 }
 
 .yewu_content {
     width: 65%;
     height: 100%;
-    /*background: blueviolet;*/
     margin: 0 auto;
 }
 
 .yewu_content .item {
     width: 100%;
     height: 100px;
-    /*background: gold;*/
     position: relative;
 }
 
@@ -1197,19 +1181,16 @@ img {
     margin: 0 auto;
     color: #666;
     font-size: 25px;
-    /*margin-left: 500px;*/
 }
 
 .yewu_content .yewu-bottom {
     width: 100%;
     height: 700px;
-    /*background: green;*/
     margin-top: -30px;
 }
 
 .yewu_content .yewu-bottom .con1 {
     width: 33.3%;
-    /*background:  red;*/
     height: 100%;
     float: left;
     position: relative;
@@ -1218,17 +1199,13 @@ img {
 .yewu_content .yewu-bottom .con1 .con_box1 {
     width: 80%;
     height: 85%;
-    /*background: blue;*/
-    /*line-height: 700px;*/
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     margin: auto;
-    /*border: 1px solid #a1b3cb;*/
     box-shadow: 0 0 10px rgba(14, 5, 10, .15);
-    /*box-shado:0 2px 30px 4px rgba(14,5,10,.15)*/
 }
 .con_box1 .yewu_img .img_box span{
     line-height: 30px;
@@ -1277,18 +1254,15 @@ img {
 
 .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img {
     padding: 30px;
-    /*background: green;*/
     height: 27%;
 }
 
 .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
     width: 32%;
     height: 50px;
-    /*border: 1px solid #838383;*/
     float: left;
     margin: 0.5em 1.5em;
     position: relative;
-    /*background: blue;*/
 }
 
 .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box img {
@@ -1307,10 +1281,8 @@ img {
 .yewu_content .yewu-bottom .con1 .con_box2 {
     z-index: 10;
     background: rgba(255, 255, 255, 1);
-    /*border: 1px solid palegreen;*/
     width: 100%;
     height: 100%;
-    /*background: red;*/
     position: absolute;
     top: 0;
     left: 0px;
@@ -1346,7 +1318,6 @@ img {
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_img .zhezhao .zhezhao_font {
     width: 90%;
     height: 90%;
-    /*background: paleturquoise;*/
     position: absolute;
     left: 0;
     right: 0;
@@ -1360,7 +1331,6 @@ img {
     color: rgba(255, 255, 255, 1);
     font-weight: 100;
     font-size: 24px;
-    /*background: gold;*/
     padding-left: -5px;
 }
 
@@ -1369,21 +1339,18 @@ img {
     color: rgba(255, 255, 255, 1);
     float: left;
     text-align: left;
-    /*background: rebeccapurple;*/
     padding: 0;
 }
 
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon {
     width: 100%;
     height: 40%;
-    /*background: yellow;*/
     position: relative;
 }
 
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon_box {
     width: 90%;
     height: 90%;
-    /*background: blanchedalmond;*/
     position: absolute;
     left: 0;
     right: 0;
@@ -1395,15 +1362,12 @@ img {
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon1 {
     width: 50%;
     height: 50%;
-    /*padding: 10px;*/
-    /*background: red;*/
     float: left;
     position: relative;
 }
 
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon1 .img {
     margin: 0 auto;
-    /*line-height: 90px;*/
     position: absolute;
     left: 0;
     right: 0;
@@ -1427,7 +1391,6 @@ img {
 
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_impor {
     height: 27%;
-    /*background: brown;*/
     padding: 20px 10px;
 }
 
@@ -1440,7 +1403,6 @@ img {
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_impor .impor_imgs {
     width: 100%;
     height: 50%;
-    /*background: beige;*/
     padding-left: 30px;
 }
 .yewu_content .yewu-bottom .con1 .con_box2 .box2_impor .impor_imgs span {
@@ -1479,15 +1441,15 @@ img {
 
 .jianjie_box {
     width: 100%;
-    padding: 100px 0;
+    padding: 50px 0;
     background: #22a7d9;
 }
 
 .jianjie_box .jianjie_container {
     width: 40%;
-    height: 300px;
+    height: 350px;
     margin: 0 auto;
-    /*background: yellow;*/
+    position: relative;
 }
 
 .jianjie_box .jianjie_container span {
@@ -1517,13 +1479,21 @@ img {
     text-align: center;
     margin-bottom: 10px;
 }
-
+.jianjie_box .jianjie_container a{
+    color: rgba(255,255,255,1);
+    position: absolute;
+    bottom: 0px;
+    right: 10px;
+}
+.jianjie_box .jianjie_container a:hover{
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+}
 .fazhan {
     width: 100%;
     height: 500px;
     background: #fff;
     position: relative;
-    /*background: rebeccapurple;*/
     position: relative;
     padding: 50px 0;
 }
@@ -1544,7 +1514,6 @@ img {
 .fazhan ul {
     width: 65%;
     height: 500px;
-    /*background: yellow;*/
     margin: -250px auto;
 
 }
@@ -1633,7 +1602,6 @@ img {
 .fazhan ul li.jin2 {
     width: 160px;
     height: 150px;
-    /*background: bisque;*/
     position: absolute;
     bottom: 10px;
     left: 550px;
@@ -1643,7 +1611,6 @@ img {
 .fazhan ul li.jin3 {
     width: 160px;
     height: 200px;
-    /*background: bisque;*/
     position: absolute;
     bottom: 10px;
     left: 800px;
@@ -1653,7 +1620,6 @@ img {
 .fazhan ul li.jin4 {
     width: 160px;
     height: 150px;
-    /*background: bisque;*/
     position: absolute;
     bottom: 10px;
     left: 1100px;
@@ -1663,7 +1629,6 @@ img {
 .fazhan ul li.jin5 {
     width: 100px;
     height: 100px;
-    /*background: bisque;*/
     position: absolute;
     bottom: 10px;
     left: 1350px;
@@ -1673,7 +1638,6 @@ img {
 .fazhan ul li.jin6 {
     width: 160px;
     height: 150px;
-    /*background: bisque;*/
     position: absolute;
     top: 10px;
     left: 450px;
@@ -1683,7 +1647,6 @@ img {
 .fazhan ul li.jin7 {
     width: 160px;
     height: 150px;
-    /*background: bisque;*/
     position: absolute;
     top: 10px;
     left: 850px;
@@ -1693,7 +1656,6 @@ img {
 .fazhan ul li.jin8 {
     width: 160px;
     height: 150px;
-    /*background: bisque;*/
     position: absolute;
     top: 10px;
     left: 1200px;
@@ -1721,16 +1683,6 @@ img {
     padding-left: 10px;
 }
 
-/*.fazhan ul li:after{*/
-/*content: "";*/
-/*display: block;*/
-/*position: absolute;*/
-/*width: 24px;*/
-/*height: 24px;*/
-/*left: 12.5px;*/
-/*top: -10px;*/
-/*background: url("../img/blue.png") no-repeat 0 0;*/
-/*}*/
 .footer_box {
     width: 100%;
     height: 450px;
@@ -1741,7 +1693,6 @@ img {
 .footer_box .footer_content {
     width: 65%;
     height: 390px;
-    /*background: bisque;*/
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -1749,21 +1700,17 @@ img {
 .footer_box .footer_content .footer_center {
     width: 100%;
     height: 300px;
-    /*background: paleturquoise;*/
-
 }
 
 .footer_box .footer_content .footer_center .footer_first {
     width: 50%;
     height: 100%;
     float: left;
-    /*background: blueviolet;*/
 }
 
 .footer_box .footer_content .footer_center .footer_second {
     width: 25%;
     float: left;
-    /*background: red;*/
 }
 
 .footer_box .footer_content .footer_center .footer_third {
@@ -1815,7 +1762,6 @@ img {
     height: 27px;
     width: 25px;
     float: left;
-    /*background: darkslategray;*/
     margin-right: 10px;
 }
 
@@ -1854,7 +1800,6 @@ img {
 .footer_box .footer_content .footer_center .footer_first .copyright {
     padding-top: 40px;
     width: 100%;
-    /*background: yellow;*/
     color: #707070;
 }
 
@@ -1953,7 +1898,6 @@ img {
    .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
         width: 32%;
         height: 40px;
-        /* border: 1px solid #838383; */
         float: left;
         margin: 0.3em 1em;
     }
@@ -1971,9 +1915,7 @@ img {
         float: left;
          margin: 20px 1px;
     }
-    .yewu_content .yewu-bottom .con1 .con_box2 .box2_impor .impor_imgs {
-        height: 20px;
-    }
+
     .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon1 {
         width: 50%;
         height: 50%;
@@ -1987,7 +1929,6 @@ img {
     .yewu_content {
         width: 80%;
         height: 100%;
-        /* background: blueviolet; */
         margin: 0 auto;
     }
     .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon1 {
@@ -2000,9 +1941,8 @@ img {
     }
     .jianjie_box .jianjie_container {
         width: 55%;
-        height: 300px;
+        height: 320px;
         margin: 0 auto;
-        /* background: yellow; */
     }
 }
 @media screen and (max-width: 1334px){
@@ -2031,6 +1971,11 @@ img {
 
 }
 @media screen and (max-width: 780px){
+    .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon1 span {
+        font-size: 14px;
+        margin-bottom: -10px;
+        display: inline-block;
+    }
     .jianjie_box .jianjie_container span {
         width: 90px;
         height: 30px;
@@ -2048,7 +1993,6 @@ img {
         font-size: 22px;
     }
     .yewu_content .yewu-bottom .con1 .con_box1 p{
-        width: 82%;
         margin: 0 auto;
     }
     .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img {
@@ -2058,7 +2002,6 @@ img {
     .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
         width: 32%;
         height: 40px;
-        /* border: 1px solid #838383; */
         float: left;
         margin:15px 25px;
     }
@@ -2093,7 +2036,7 @@ img {
     }
     .jianjie_box .jianjie_container {
         width: 80%;
-        height: 300px;
+        height: 350px;
     }
     .jianjie_box .jianjie_container p {
         line-height: 24px;
@@ -2106,7 +2049,6 @@ img {
     .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
         width: 32%;
         height: 40px;
-        /* border: 1px solid #838383; */
         float: left;
         margin:2px 15px;
     }
@@ -2209,13 +2151,16 @@ img {
         line-height: 80px;
         font-size: 16px;
     }
+    .top-header .media ul li a{
+        display: inline-block;
+    }
     .top-header .media ul li div {
         line-height: 50px;
         font-size: 12px;
     }
     .jianjie_box .jianjie_container {
         width: 70%;
-        height: 300px;
+        height: 550px;
     }
     .jianjie_box .jianjie_container p {
         line-height: 24px;
@@ -2231,7 +2176,6 @@ img {
     .jianjie_box {
         width: 100%;
         padding-top: 50px;
-        padding-bottom: 160px;
     }
     .yewu_content .yewu-bottom {
         width: 100%;
@@ -2309,9 +2253,6 @@ img {
         font-size: 10px;
         line-height: 14px;
     }
-    .jianjie_box {
-        padding-bottom: 180px;
-    }
     .jianjie_box .jianjie_container h2 {
         margin-top: 10px;
         font-size: 18px;
@@ -2359,7 +2300,6 @@ img {
     .yewu_content .item h2 {
         line-height: 60px;
         font-size: 20px;
-        /* margin-left: 500px; */
     }
     .yewu_content .yewu-bottom .con1{
         margin-top: -20px;
@@ -2406,9 +2346,6 @@ img {
     }
 }
 @media screen and (max-width: 375px){
-    .jianjie_box {
-        padding-bottom: 200px;
-    }
     .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
         margin: 0px 15px;
     }
@@ -2432,11 +2369,7 @@ img {
     }
 }
 
-
 @media screen and (max-width: 375px){
-    .jianjie_box {
-        padding-bottom: 220px;
-    }
     .footer_box {
         height: 620px;
         padding-top: 30px;
