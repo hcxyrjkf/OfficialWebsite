@@ -7,16 +7,19 @@ Java版本: Java 1.7
 
 ## 数据库结构
 Categorytable：  
+
 |categoryId|category|   
 |---|---|  
 |int|varchar|  
 
 Filetable：  
+
 |id|fileFileName|fileContentType|path|fileTitle|fileContent|categoryId|  
 |---|---|---|---|---|---|---|  
 |int|varchar|varchar|varchar|varchar|longtext|int|  
 
 Usertable：  
+
 |id|userName|userPassword|  
 |---|---|---|  
 |int|varchar|varchar|  
