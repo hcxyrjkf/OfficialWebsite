@@ -7,7 +7,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>Insert title here</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/loginsuccess.css" rel="stylesheet">
 <script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript">
 window.onload=function (){
 	
@@ -116,16 +119,28 @@ function selOther(){
 
 </head>
 <body>
-	<form name="form1" action="filecAction_execute" method="post" enctype="multipart/form-data">
-	
-		<select id="categoryId" name="categoryId">
-		
-		</select><br>
-		上传文件 : <input type="file" name="file" /> <br> 
-  				  文件标题(页面)<input type="text" name="fileTitle"><br>
-  				  文件内容<textarea rows="10" name="fileContent"></textarea><br>
-  				   <input type="submit" value="上传"><br>
-  		<table id="filectable" border="1px">
+	<div>
+	<form class="form-horizontal form-search" name="form1" action="filecAction_execute" method="post" enctype="multipart/form-data">
+		<div>
+		<select class="multiple" id="categoryId" name="categoryId">
+		</select>
+		<br>
+		<input class="inline" type="file" name="file" /> 
+		</div>
+		<hr>
+				<div class="input-group">
+				<span class="input-group-addon">文件标题(页面)</span>
+  				  <input class="form-control" type="text" name="fileTitle" placeholder="请输入文件标题">
+  				 </div>
+  				 <hr>
+  				 <div>
+  				 <span class="input-group-addon">文件内容</span>
+  				 <textarea class="form-control" rows="10" name="fileContent" placeholder="请输入文件概述"></textarea>
+  				 </div>
+  				   <button class="btn btn-primary" type="submit" >上传</button><br>
+  				   <hr>
+  		<div class="table-response">
+  		<table class="table table-bordered table-condensed table-striped" id="filectable" border="1px">
   			<tr>
   				<td>
   					选择
@@ -156,9 +171,10 @@ function selOther(){
   				</td>
   			</tr>
   		</table>
+  		</div>
 	</form>
-	<input type="button"  value="全选" onclick="selectAllOrNo()">
-	<input type="button"  value="删除所选内容" onclick="delArc()"><br>
-	
+	<button class="btn btn-primary" type="button"  onclick="delArc()">删除所选内容</button>
+	<button class="btn btn-primary" type="button"  onclick="selectAllOrNo()">全选</button>
+	</div>
 </body>
 </html>

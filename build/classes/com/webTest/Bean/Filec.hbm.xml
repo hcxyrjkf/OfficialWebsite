@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+ 
+<hibernate-mapping package="com.webTest.Bean">
+    <class name="Filec" table="filetable">
+        <id name="id" column="id">
+            <generator class="native">
+            </generator>
+        </id>
+        <property name="fileFileName" type="java.lang.String"/>
+        <property name="fileContentType" type="java.lang.String"/>
+        <property name="path" type="java.lang.String"/>
+        <property name="fileTitle" type="java.lang.String"/>
+        <property name="fileContent" type="java.lang.String"/>
+        <property name="categoryId" type="java.lang.String"/>
+    </class>
+
+</hibernate-mapping>
