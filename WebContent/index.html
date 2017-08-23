@@ -10,11 +10,6 @@
     <link rel="stylesheet" href="css/nstyle.css">
 </head>
 <body>
-<div class="htmleaf-container">
-    <header class="htmleaf-header">
-
-    </header>
-</div>
 <!--导航栏-->
 <div class="banner">
     <div class="top-header">
@@ -25,26 +20,27 @@
         <a href="#" class="media">
             <div class="mianbaoxie"></div>
             <ul>
-                <li>公司简介</li>
-                <li>主营业务
-                    <img src="img/open.png" alt="">
-                    <div>虚拟现实相关产品</div>
-                    <div>图像理解解决方案</div>
+                <li id="jianjie">公司简介</li>
+               <li id="yewus">
+                    主营业务
+                       <img src="img/open.png" alt="">
+                       <div>虚拟现实相关产品</div>
+                       <div>图像理解解决方案</div>
                     <div>智能文本处理解决方案</div>
                 </li>
-                <li>产品
+                <li id="product">产品
                     <img src="img/open.png" alt="">
-                    <div link="index.html">虚拟现实</div>
+                    <div >虚拟现实</div>
                     <div>医疗影像理解</div>
                 </li>
-                <li>联系我们</li>
+                <li id="contact">联系我们</li>
             </ul>
         </a>
         <!--顶部面包屑结束-->
         <!--顶部导航栏开始-->
         <div class="header_box">
             <span><a href="#" style="text-decoration: none;color:white;">首页</a></span>
-            <span><a href="#jianjie" style="text-decoration: none;color:white;">公司简介</a></span>
+            <span><a href="information.html" style="text-decoration: none;color:white;">公司简介</a></span>
             <span><a href="#yewu" style="text-decoration: none;color:white;">主营业务</a>
                  <ul>
                      <li><a href="#yewu" style="text-decoration: none;color:white;">虚拟现实相关产品</a></li>
@@ -62,37 +58,6 @@
 
         </div>
     </div>
-    <!--顶部导航栏结束-->
-
-    <!--<div class="header">-->
-    <!--<ul class="nav_list">-->
-    <!--<li class="nav_li">-->
-    <!--<a href="javascript:;" class="btn_nav" id="nav_more"><i class="ic_more png"></i>导航栏</a>-->
-    <!--<div class="more_nav" id="more_nav">-->
-    <!--&lt;!&ndash;[if lt IE 9]>-->
-    <!--<span class="opc_bg"></span>-->
-    <!--<![endif]&ndash;&gt;-->
-    <!--<i class="ic_bdot png" id="h_bdot"></i>-->
-    <!--<ul id="h_nav">-->
-    <!--<li><a href="#" class="btn_snav">公司首页</a></li>-->
-    <!--<li><a href="#" class="btn_snav">公司简介</a></li>-->
-    <!--<li><a href="#" class="btn_snav">公司动态</a></li>-->
-    <!--<li>-->
-    <!--<i class="ic_sdot png" id="h_sdot"></i>-->
-    <!--<dl class="sub_nav" id="h_subnav">-->
-    <!--<dt><a href="#" class="btn_snav">公司产品</a></dt>-->
-    <!--<dd><a href="#">深度学习</a></dd>-->
-    <!--<dd><a href="#">人工智能</a></dd>-->
-    <!--<dd><a href="#">网站制作</a></dd>-->
-    <!--<dd><a href="#">U3d</a></dd>-->
-    <!--</dl>-->
-    <!--</li>-->
-    <!--<li><a href="#" class="btn_snav">联系我们</a></li>-->
-    <!--</ul>-->
-    <!--</div>-->
-    <!--</li>-->
-    <!--</ul>-->
-    <!--</div>-->
     <div class="wrap" id="wrap">
         <div class="wrapper">
             <div class="product_list" id="product_list">
@@ -306,7 +271,7 @@
                                     <div class="zhezhao_font">
                                         <h2>图像理解解决方案</h2>
                                         <p>
-                                            随着计算机视觉和人工智能学科的发展,相关研究内容不断拓展、相互覆盖,图像理解既是对计算机视觉研究的延伸和拓展,又是人类智能的研究新领域,渗透着人工智能的研究进程,近年来已在工业视觉、人机交互、视觉导航、虚拟现实、特定图像分析解释以及生物视觉研究等领域得到了广泛应用</p>
+                                            随着计算机视觉和人工智能学科的发展,相关研究内容不断拓展、相互覆盖,图像理解既是对计算机视觉研究的延伸和拓展,又是人类智能的研究新领域,渗透着人工智能的研究进程。</p>
                                     </div>
                                 </div>
                             </div>
@@ -349,19 +314,15 @@
                         <div class="yewu_img">
                             <div class="img_box">
                                 <span>数据层</span>
-                                <!--<img src="img/ye1.jpg" alt="">-->
                             </div>
                             <div class="img_box">
                                 <span>描述层</span>
-                                <!--<img src="img/ye1.jpg" alt="">-->
                             </div>
                             <div class="img_box">
                                 <span>应用层</span>
-                                <!--<img src="img/ye1.jpg" alt="">-->
                             </div>
                             <div class="img_box">
                                 <span>认知层</span>
-                                <!--<img src="img/ye1.jpg" alt="">-->
                             </div>
                         </div>
                     </div>
@@ -446,6 +407,7 @@
             <p>
                 北京华诚兴业软件开发有限责任公司主要领导和技术骨干均有在国内知名高校、大型企业工作经验。具有一批经验丰富的技术研发、系统设计、软硬件开发的人员，在国内外相关领域具有较大影响力。
                 北京华诚兴业软件开发有限责任公司立足人工智能的研发平台，起到推动科普生活化，生活科技化，科技产业化的理念，让科技前端的人才真正服务于大众。
+            <a href="information.html">更多>>></a>
         </div>
     </div>
 </div>

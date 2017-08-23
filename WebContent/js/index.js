@@ -31,4 +31,17 @@ $(function () {
         $(this).find('div').slideToggle()
     })
 
+
+    $('#contact').on('click',function(){
+        location.href = "contact.html"
+    })
+    $('#product').on('click',function(){
+        location.href = "products.html"
+    })
+    $('#yewus').on('click',function(){
+        location.href = "index.html"
+    })
+    $('#jianjie').on('click',function(){
+        location.href = "information.html"
+    })
 })
