@@ -10,7 +10,6 @@ ul li{
     padding: 0;
 }
 .top-header{
-    /*background: rgba(0,0,0,0.8);*/
     background: #282830;
     position: fixed;
     _position: absolute;
@@ -24,7 +23,6 @@ ul li{
 .top-header .header_box{
     width: 60%;
     height: 100%;
-    /*background-color: blue;*/
     margin: 0 auto;
 }
 .top-header .header_box span{
@@ -36,7 +34,6 @@ ul li{
     text-align: center;
     font-size: 16px;
     color:rgba(255,255,255,.5);
-    /*background: red;*/
     margin: 0;
     padding: 0;
     float: left;
@@ -44,7 +41,6 @@ ul li{
 }
 .top-header .header_box span ul{
     width: 82%;
-    /*background: rgba(0,0,0,.8);*/
     background: #282830;
     display: none;
     position: absolute;
@@ -61,10 +57,6 @@ ul li{
 .top-header .header_box span:hover{
     background: rgba(0,0,0,.4);
 }
-/*.main{*/
-/*background:rgba(0,0,0,0.1);*/
-
-/*}*/
 .banner{
     width: 100%;
     height: auto;
@@ -80,7 +72,6 @@ ul li{
 .contact .contact_box{
     width: 65%;
     padding: 50px 0;
-    /*background: pink;*/
     margin: 0 auto;
 }
 
@@ -105,13 +96,10 @@ ul li{
 }
 .contact_us .contact_one .right{
     float: left;
-    /*background: blue;*/
     width: 350px;
 }
 .contact_us .contact_one .right ul{
-    /*line-height: 25px;*/
-    /*margin-left:-2px;*/
-    margin: 0;
+    margin: 0px;
 }
 .contact_us .contact_one .right ul li{
     line-height: 18px;
@@ -181,7 +169,6 @@ ul li{
 .footer_box .footer_content {
     width: 65%;
     height: 390px;
-    /*background: bisque;*/
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -189,21 +176,17 @@ ul li{
 .footer_box .footer_content .footer_center {
     width: 100%;
     height: 300px;
-    /*background: paleturquoise;*/
-
 }
 
 .footer_box .footer_content .footer_center .footer_first {
     width: 50%;
     height: 100%;
     float: left;
-    /*background: blueviolet;*/
 }
 
 .footer_box .footer_content .footer_center .footer_second {
     width: 25%;
     float: left;
-    /*background: red;*/
 }
 
 .footer_box .footer_content .footer_center .footer_third {
@@ -293,7 +276,6 @@ ul li{
 .footer_box .footer_content .footer_center .footer_first .copyright {
     padding-top:20px;
     width: 100%;
-    /*background: yellow;*/
     color: #707070;
 }
 
@@ -405,7 +387,6 @@ ul li{
     }
     .top-header .header_box{
         display: none;
-        /*background: red;*/
     }
     .mianbaoxie{
         width: 30px;
@@ -417,7 +398,6 @@ ul li{
     }
     .top-header{
        position: fixed;
-        /*position: relative;*/
     }
     .top-header .media ul {
         margin-left: -40px;
@@ -493,7 +473,6 @@ ul li{
     .footer_box .footer_content .footer_center .footer_second {
         width: 40%;
         float: left;
-        /* background: red; */
     }
     .footer_box .footer_content .footer_center .footer_third {
         height:auto;
@@ -539,7 +518,6 @@ ul li{
     }
     .contact_box .address .address_one {
         font-size: 16px;
-        margin-top: 80px;
     }
     .contact_box .address a img{
         width: 100%;
@@ -601,17 +579,14 @@ ul li{
     }
     .footer_box .footer_content .footer_center .footer_second {
         width: 100%;
-        /* background: red; */
     }
     .footer_box .footer_content .footer_center .footer_third {
         width: 100%;
-        /* background: red; */
     }
     .footer_box .footer_content .footer_center .footer_third .contact_one .right .top {
         line-height: 24px;
         font-size: 12px;
         color: #fff;
-        /*background: blue;*/
     }
     .footer_box .footer_content .footer_center .footer_third .contact_one .right .top .email {
         background-size: 14px;
@@ -626,7 +601,6 @@ ul li{
         height: 30px;
         line-height: 30px;
         float: left;
-        /*background: rebeccapurple;*/
         margin-left: -34px;
     }
     .footer_box .footer_content .footer_center .footer_third .contact_one .right .top .lianjie {
@@ -669,7 +643,7 @@ ul li{
         font-size: 12px;
     }
     .footer_box {
-        height: 600px;
+        height: 630px;
     }
     .top-header .media ul li {
         line-height: 60px;

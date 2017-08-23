@@ -10,7 +10,6 @@ ul li{
     padding: 0;
 }
 .top-header{
-    /*background: rgba(0,0,0,0.8);*/
     background: #282830;
     position: fixed;
     _position: absolute;
@@ -24,7 +23,6 @@ ul li{
 .top-header .header_box{
     width: 60%;
     height: 100%;
-    /*background-color: blue;*/
     margin: 0 auto;
 }
 .top-header .header_box span{
@@ -36,7 +34,6 @@ ul li{
     text-align: center;
     font-size: 16px;
     color:rgba(255,255,255,.5);
-    /*background: red;*/
     margin: 0;
     padding: 0;
     float: left;
@@ -44,7 +41,6 @@ ul li{
 }
 .top-header .header_box span ul{
     width: 82%;
-    /*background: rgba(0,0,0,.8);*/
     background: #282830;
     display: none;
     position: absolute;
@@ -61,10 +57,6 @@ ul li{
 .top-header .header_box span:hover{
     background: rgba(0,0,0,.4);
 }
-/*.main{*/
-/*background:rgba(0,0,0,0.1);*/
-
-/*}*/
 .banner{
     width: 100%;
     height: auto;
@@ -80,7 +72,6 @@ ul li{
 .contact .contact_box{
     width: 65%;
     padding: 50px 0;
-    /*background: pink;*/
     margin: 0 auto;
 
 }
@@ -93,6 +84,8 @@ ul li{
     font-size: 22px;
     text-align: left;
     font-weight: 500;
+    line-height:40px;
+    margin-left: 10px;
 }
 .contact .contact_box .p{
     margin: 0 auto;
@@ -107,7 +100,6 @@ ul li{
 }
 .contact .contact_box  p{
     line-height: 30px;
-  /*margin: 0;*/
     font-size: 16px;
 }
 .contact .contact_box .contact_title{
@@ -142,7 +134,6 @@ ul li{
 .footer_box .footer_content {
     width: 65%;
     height: 340px;
-    /*background: bisque;*/
     margin: 0 auto;
     padding-top: 60px;
 }
@@ -150,21 +141,17 @@ ul li{
 .footer_box .footer_content .footer_center {
     width: 100%;
     height: 300px;
-    /*background: paleturquoise;*/
-
 }
 
 .footer_box .footer_content .footer_center .footer_first {
     width: 50%;
     height: 100%;
     float: left;
-    /*background: blueviolet;*/
 }
 
 .footer_box .footer_content .footer_center .footer_second {
     width: 25%;
     float: left;
-    /*background: red;*/
 }
 
 .footer_box .footer_content .footer_center .footer_third {
@@ -190,7 +177,6 @@ ul li{
     font-family: PingFang SC, Microsoft YaHei, 微软雅黑, Arial, sans-serif;
     color: white;
 }
-
 .footer_box .footer_content .footer_center .footer_first .footer_p {
     width: 100%;
 }
@@ -215,7 +201,6 @@ ul li{
     height: 27px;
     width: 25px;
     float: left;
-    /*background: darkslategray;*/
     margin-right: 10px;
 }
 
@@ -254,7 +239,6 @@ ul li{
 .footer_box .footer_content .footer_center .footer_first .copyright {
     padding-top:20px;
     width: 100%;
-    /*background: yellow;*/
     color: #707070;
 }
 
@@ -363,7 +347,9 @@ ul li{
     }
     .top-header .header_box{
         display: none;
-        /*background: red;*/
+    }
+    .contact .contact_box{
+        width: 80%;
     }
     .mianbaoxie{
         width: 30px;
@@ -375,7 +361,6 @@ ul li{
     }
     .top-header{
        position: fixed;
-        /*position: relative;*/
     }
     .top-header .media ul {
         margin-left: -40px;
@@ -451,7 +436,6 @@ ul li{
     .footer_box .footer_content .footer_center .footer_second {
         width: 40%;
         float: left;
-        /* background: red; */
     }
     .footer_box .footer_content .footer_center .footer_third {
         height:auto;
@@ -493,11 +477,19 @@ ul li{
     }
     .contact .contact_box {
         width: 85%;
-        padding: 30px 0;
-        /* background: pink; */
+        padding: 0px 0;
         margin: 0 auto;
     }
-
+    .contact .contact_box .contact_title {
+        font-size: 18px;
+    }
+    .contact .contact_box h2 {
+        font-size: 20px;
+    }
+    .contact .contact_box p {
+        line-height: 22px;
+        font-size: 14px;
+    }
     .footer_box .footer_content .footer_center .footer_first {
         width: 100%;
     }
@@ -539,17 +531,14 @@ ul li{
     }
     .footer_box .footer_content .footer_center .footer_second {
         width: 100%;
-        /* background: red; */
     }
     .footer_box .footer_content .footer_center .footer_third {
         width: 100%;
-        /* background: red; */
     }
     .footer_box .footer_content .footer_center .footer_third .contact_one .right .top {
         line-height: 24px;
         font-size: 12px;
         color: #fff;
-        /*background: blue;*/
     }
     .footer_box .footer_content .footer_center .footer_third .contact_one .right .top .email {
         background-size: 14px;
@@ -564,7 +553,6 @@ ul li{
         height: 30px;
         line-height: 30px;
         float: left;
-        /*background: rebeccapurple;*/
         margin-left: -34px;
     }
     .footer_box .footer_content .footer_center .footer_third .contact_one .right .top .lianjie {
@@ -585,7 +573,6 @@ ul li{
 }
 
 @media screen and (max-width: 320px){
-
     .contact .contact_box {
         width: 85%;
         padding: 10px 0;
@@ -599,7 +586,7 @@ ul li{
         font-size: 12px;
     }
     .footer_box {
-        height: 600px;
+        height: 630px;
     }
     .top-header .media ul li {
         line-height: 60px;

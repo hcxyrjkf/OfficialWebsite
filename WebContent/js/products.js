@@ -11,13 +11,26 @@ $(function () {
         $(this).find('.con_box2').slideToggle()
     })
 
-    //    闈㈠寘灞戜笅鎷夋
+    // 闈㈠寘灞戜笅鎷夋
     $('.mianbaoxie').on('click', function () {
         $('.media ul').slideToggle();
     })
     $(".media ul li").on("click",function(){
         $(this).find("img").addClass("img_animate")
         $(this).find('div').slideToggle()
+    })
+    //导航跳转
+    $('#contact').on('click',function(){
+        location.href = "contact.html"
+    })
+    $('#product').on('click',function(){
+        location.href = "products.html"
+    })
+    $('#yewus').on('click',function(){
+        location.href = "index.html"
+    })
+    $('#jianjie').on('click',function(){
+        location.href = "information.html"
     })
 
 
@@ -120,7 +133,7 @@ $(function () {
                })
            },
            error:function(data){
-                alert("0")
+                
            }
        })
        
