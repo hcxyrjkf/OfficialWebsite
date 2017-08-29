@@ -11,8 +11,8 @@
 <!-- 若package加上namespace属性，则jsp页面form 的action属性必需加上项目名称的路径-->
 <package name="com.webTest.Action" extends="struts-default" namespace="/">
 	<action name="userAction" class="userAction" method="getUserList" >
-		<result name="success">/loginsuccess.jsp</result>
-		<result name="login">/login.jsp</result>
+		<result name="success">/WEB-INF/loginsuccess.html</result>
+		<result name="login">login.html</result>
 	</action>
 <!-- 	<action name="filecAction" class="filecAction" method="execute">
     	<result name="end">/success.jsp</result>
@@ -20,9 +20,9 @@
     	<param name="maximumSize">204800000</param>
   	</action>   -->
   		<action name="filecAction_*" class="filecAction" method="{1}">
-  		<result name="success">/loginsuccess.jsp</result>
-    	<result name="end">/success.jsp</result>
-    	<param name="savePath">/filecAction</param>  
+  		<result name="success">/WEB-INF/loginsuccess.html</result>
+    	<result name="end">/WEB-INF/success.html</result>
+    	<param name="savePath">filecAction</param>  
     	
   	</action>      
   	
