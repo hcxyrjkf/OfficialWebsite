@@ -57,7 +57,7 @@ $(function () {
     //以下是调用上面的函数
     var mb = myBrowser();
     if ("IE" == mb) {
-         alert("我是 IE");
+         //alert("我是 IE");
         $.ajax({
             type:"POST",
             url:"filecAction_filecWebList",
