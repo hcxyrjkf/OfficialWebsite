@@ -27,4 +27,5 @@ Usertable：
 ## 安装
 执行命令下载 `git clone git@github.com:hcxyrjkf/OfficialWebsite.git`  
 下载后，通过eclipse的import来导入工程.若出现错误，进入项目的设置界面，选择java build path 删除所有包，并且导入工程中WebContent下的lib文件夹中的所有jar包.  
-项目所需的数据库，在项目中，名为userdata.sql.
+项目所需的数据库，在项目中，名为userdata.sql.  
+## 注意！！！ 上传时需要上传zip或者rar格式，并且需要先上传webgl项目，再上传webplayer项目
