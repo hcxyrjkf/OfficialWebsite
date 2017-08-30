@@ -85,7 +85,7 @@ $(function () {
                  	       $('.openIframe').css('display','block');
                  	       $('.color').addClass('colorss')
                  	       $('.close').css('display','block');
-                 	       $('iframe').attr('src',"http://localhost:8080/webTest/"+val);
+                 	       $('iframe').attr('src',"http://47.93.227.28/OfficialWebsite/"+val);
                  	   })
              	   }
            
@@ -96,47 +96,45 @@ $(function () {
             }
         })
 
-    }
- 
-    
-       $.ajax({
-           type:"POST",
-           url:"filecAction_filecWebList",
-           dataType:"json",
-           success: function(msg){
-//              var data = eval("("+msg+")");
-               $(msg).each(function(i,v){
-            	   if(i%2==1){
-            		   console.log(i)
-            	  	   $('.color').append("<div class=\"product_list\">"
-                               +"<div class=\"product_box\">"
-                               +"<div class=\"list\">"
-                               +"<span>"+(v.id)/2+"</span>"
-                               +"<h2>"+v.fileTitle+"</h2>"
-                               +"<p>"+v.fileContent+"</p>"
-                               +"</div>"
-                               +"<div class=\"shows\">"
-                               +"<div class=\"play\" value="+v.path+">"+"</div>"
-                               +"<img src=\"img/product0.jpg\" alt=\"\">"
-                               +"</div>"
-                               +"</div>"
-                               + "</div>");
-                	   $('.play').on('click',function(){
-                	       var val=$(this).attr('value')
-                	       $('.openIframe').css('display','block');
-                	       $('.color').addClass('colorss')
-                	       $('.close').css('display','block');
-                	       $('iframe').attr('src',"http://localhost:8080/webTest/"+val);
-                	   })
-            	   }
-          
-               })
-           },
-           error:function(data){
-                
-           }
-       })
-       
+    }else {
+    	$.ajax({
+            type:"POST",
+            url:"filecAction_filecWebList",
+            dataType:"json",
+            success: function(msg){
+//               var data = eval("("+msg+")");
+                $(msg).each(function(i,v){
+             	   if(i%2==1){
+             		   console.log(i)
+             	  	   $('.color').append("<div class=\"product_list\">"
+                                +"<div class=\"product_box\">"
+                                +"<div class=\"list\">"
+                                +"<span>"+(v.id)/2+"</span>"
+                                +"<h2>"+v.fileTitle+"</h2>"
+                                +"<p>"+v.fileContent+"</p>"
+                                +"</div>"
+                                +"<div class=\"shows\">"
+                                +"<div class=\"play\" value="+v.path+">"+"</div>"
+                                +"<img src=\"img/product0.jpg\" alt=\"\">"
+                                +"</div>"
+                                +"</div>"
+                                + "</div>");
+                 	   $('.play').on('click',function(){
+                 	       var val=$(this).attr('value')
+                 	       $('.openIframe').css('display','block');
+                 	       $('.color').addClass('colorss')
+                 	       $('.close').css('display','block');
+                 	       $('iframe').attr('src',"http://47.93.227.28/OfficialWebsite/"+val);
+                 	   })
+             	   }
+           
+                })
+            },
+            error:function(data){
+                 
+            }
+        })
+	}
        
 //    var iframe=$('iframe')
 //   $('.play').on('click',function(value){

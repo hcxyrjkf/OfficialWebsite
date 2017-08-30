@@ -1,7 +1,9 @@
 package com.webTest.tools;
+
 import java.security.MessageDigest;
 
 import org.springframework.stereotype.Component;
+
 @Component("md5Test")
 public class Md5Test {
   

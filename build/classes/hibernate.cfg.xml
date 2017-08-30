@@ -12,7 +12,7 @@
         <!-- property name="connection.url">jdbc:mysql://localhost:3306/userdata?characterEncoding=UTF-8</property -->
         <property name="connection.url">jdbc:mysql://localhost:3306/userdata</property>
         <property name="connection.username">root</property>
-        <property name="connection.password">123456</property>
+        <property name="connection.password">admin</property>
         <!-- SQL dialect -->
         <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
         <property name="current_session_context_class">thread</property>

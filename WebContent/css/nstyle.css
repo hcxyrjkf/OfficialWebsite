@@ -323,9 +323,9 @@ img {
     left: 50%;
 }
 
-.product_btns .btns_box a:hover, .product_btns .btns_box a.cur {
-    background: url(about:blank);
-}
+/*.product_btns .btns_box a:hover, .product_btns .btns_box a.cur {*/
+    /*background: url(about:blank);*/
+/*}*/
 
 .product_btns .ic_line {
     position: absolute;
@@ -1208,7 +1208,7 @@ img {
     box-shadow: 0 0 10px rgba(14, 5, 10, .15);
 }
 .con_box1 .yewu_img .img_box span{
-    line-height: 30px;
+    line-height: 35px;
     text-align: center;
     font-size: 14px;
     display: inline-block;
@@ -1253,12 +1253,16 @@ img {
 }
 
 .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img {
-    padding: 30px;
-    height: 27%;
+    padding: 30px 20px;
+    height: 18%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
 }
 
 .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
-    width: 32%;
+    width: 33%;
     height: 50px;
     float: left;
     margin: 0.5em 1.5em;
@@ -1894,6 +1898,31 @@ img {
     float: left;
     margin-right: 5px;
 }
+@media screen and (max-width: 1515px){
+    .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
+        width: 36%;
+        height: 50px;
+        float: left;
+        margin: 0.5em 1em;
+    }
+    .con_box1 .yewu_img .img_box span {
+        line-height: 35px;
+        font-size: 12px;
+    }
+    .yewu_content .yewu-bottom .con1 .con_box2 .box2_img .zhezhao .zhezhao_font p {
+        font-size: 12px;
+    }
+    .yewu_content .yewu-bottom .con1 .con_box2 .box2_img .zhezhao .zhezhao_font h2 {
+        font-weight: 100;
+        font-size: 20px;
+        padding-left: -5px;
+    }
+    .yewu_content {
+        width:80%;
+        height: 100%;
+        margin: 0 auto;
+    }
+}
 @media screen and (max-width: 1403px){
    .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
         width: 32%;
@@ -1971,6 +2000,20 @@ img {
 
 }
 @media screen and (max-width: 780px){
+    .yewu_content .yewu-bottom .con1 .con_box1 h2 {
+        font-size: 20px;
+        line-height: 50px;
+        padding-top: 20px;
+    }
+    .yewu_content .yewu-bottom .con1 .con_box1 p {
+        font-size: 16px;
+        line-height: 30px;
+        text-align: center;
+        padding: 0 10px;
+        margin-bottom: 10px;
+        margin: 0 auto;
+        width: 90%;
+    }
     .yewu_content .yewu-bottom .con1 .con_box2 .box2_icon .icon1 span {
         font-size: 14px;
         margin-bottom: -10px;
@@ -1992,12 +2035,11 @@ img {
         font-weight: 200;
         font-size: 22px;
     }
-    .yewu_content .yewu-bottom .con1 .con_box1 p{
-        margin: 0 auto;
-    }
+
     .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img {
-        padding: 30px;
+        padding: 30px 60px;
         height: 27%;
+        margin-bottom: 0;
     }
     .yewu_box .yewu_content .yewu-bottom .con1 .con_box1 .yewu_img .img_box {
         width: 32%;
@@ -2005,6 +2047,17 @@ img {
         float: left;
         margin:15px 25px;
     }
+    .con_box1 .yewu_img .img_box span {
+        line-height: 40px;
+        text-align: center;
+        font-size: 14px;
+        display: inline-block;
+        width: 100%;
+        height: 90%;
+        border: 1px solid #22a7d9;
+        color: #22a7d9;
+    }
+
     .small_view .btn_product {
         margin-left: -45px;
         width: 110px;
