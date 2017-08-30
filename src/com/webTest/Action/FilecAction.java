@@ -51,11 +51,11 @@ import com.webTest.tools.UnZipper;
 @Controller("filecAction")
 public class FilecAction extends ActionSupport {
 	private File file;
-	// ÎÄ¼þÃû³Æ
+	// ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
 	private String fileFileName;
-	// ÎÄ¼þÀàÐÍ
+	// ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½
 	private String fileContentType;
-	// ×¢Òâ£ºÎÄ¼þÃû³ÆºÍÎÄ¼þÀàÐÍµÄÃû³ÆÇ°×º±ØÐëÏàÍ¬£¬ 
+	// ×¢ï¿½â£ºï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Æºï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½Ç°×ºï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¬ï¿½ï¿½ 
 	private String path;
 	private int categoryId;
 	@Autowired
@@ -190,11 +190,11 @@ public class FilecAction extends ActionSupport {
 	@Override
 	public String execute() throws Exception {
 		HttpServletRequest request = ServletActionContext.getRequest();
-		// ÉèÖÃÖµ
+		// ï¿½ï¿½ï¿½ï¿½Öµ
 		List categoryList = categoryService.getCategoryList();
 		ServletActionContext.getRequest().setAttribute("categoryList",
 				categoryList);
-		// »ñÈ¡Öµ
+		// ï¿½ï¿½È¡Öµ
 		categoryId = Integer.parseInt(request.getParameter("categoryId"));
 		filecService.get(categoryId);
 
@@ -206,9 +206,9 @@ public class FilecAction extends ActionSupport {
 			ReadFile readFile = new ReadFile();
 			ServletContext sc = ServletActionContext.getServletContext();
 			String filesource = sc.getRealPath("/");
-//			// ÅÐ¶ÏÎÄ¼þÊÇ·ñÉÏ´«£¬Èç¹ûÉÏ´«µÄ»°½«»á´´½¨¸ÃÄ¿Â¼
+//			// ï¿½Ð¶ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½á´´ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
 //			if (!uploadFile.exists()) {
-//				uploadFile.mkdir(); // ´´½¨¸ÃÄ¿Â¼
+//				uploadFile.mkdir(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
 //			}
 			//System.err.println(filesource);
 			File file1 = new File(filesource, fileFileName);
@@ -218,15 +218,15 @@ public class FilecAction extends ActionSupport {
 				// TODO Auto-generated catch block
 				e.printStackTrace();			
 			}
-			file.delete();//É¾³ýcache
+			file.delete();//É¾ï¿½ï¿½cache
 //			
-//			// ÉùÃ÷ÎÄ¼þÊäÈëÁ÷£¬ÎªÊäÈëÁ÷Ö¸¶¨ÎÄ¼þÂ·¾¶
+//			// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 //			FileInputStream input = new FileInputStream(file);
-//			// »ñÈ¡Êä³öÁ÷£¬»ñÈ¡ÎÄ¼þµÄÎÄ¼þµØÖ·¼°Ãû³Æ
+//			// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 //			FileOutputStream out = new FileOutputStream(uploadFile + "\\"
 //					+ fileFileName);
 //			try {
-//				byte[] b = new byte[1024];// Ã¿´ÎÐ´ÈëµÄ´óÐ¡  
+//				byte[] b = new byte[1024];// Ã¿ï¿½ï¿½Ð´ï¿½ï¿½Ä´ï¿½Ð¡  
 //				int i = 0;
 //				while ((i = input.read(b)) > 0) {
 //					out.write(b, 0, i);
@@ -239,20 +239,20 @@ public class FilecAction extends ActionSupport {
 //				input.close();
 //				out.close();
 //			}
-			//½âÑ¹  ºóÃæÓÐ½âÑ¹µØÖ· 
+			//ï¿½ï¿½Ñ¹  ï¿½ï¿½ï¿½ï¿½ï¿½Ð½ï¿½Ñ¹ï¿½ï¿½Ö· 
 			filesource = filesource + fileFileName;
 			
 			deCompressUtil.deCompress(filesource, ServletActionContext.getServletContext().getRealPath("/"));
-			//¶ÁÈ¡  ÕâÀïÃæ»¹ÓÐ½ØÈ¡×Ö·û´®µÄ´íÎó£¬ÎÒ´ý»á×Ô¼º¸ÄÏÂ
+			//ï¿½ï¿½È¡  ï¿½ï¿½ï¿½ï¿½ï¿½æ»¹ï¿½Ð½ï¿½È¡ï¿½Ö·ï¿½ï¿½ï¿½ï¿½Ä´ï¿½ï¿½ï¿½ï¿½Ò´ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½ï¿½ï¿½ï¿½
 			for (int i = 0; i < readFile.readFile(ServletActionContext.getServletContext().getRealPath("/")+fileFileName.split("[.]")[0]).size(); i++) {
-			    	//1Í¨¹ýÃû×Ö È¡Êý¾Ý²éÕÒÕâ¸ö´æÔÚÂð 
+			    	//1Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ È¡ï¿½ï¿½ï¿½Ý²ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ 
 					
-					//ÅÐ¶Ï  ´æÔÚ update   ²»ÔÚ´æ¾ÍÌí¼Ó  
+					//ï¿½Ð¶ï¿½  ï¿½ï¿½ï¿½ï¿½ update   ï¿½ï¿½ï¿½Ú´ï¿½ï¿½ï¿½ï¿½ï¿½  
 					path = readFile.readFile(ServletActionContext.getServletContext().getRealPath("/")+fileFileName.split("[.]")[0]).get(i).toString();
 					System.err.println(path);
 					//fileName = readFile.readfile(filesource).getName()
 					//fileName = path.split("[/]")[path.split("[/]").length-1];
-					fileName = path.substring(path.lastIndexOf("\\")+1);
+					fileName = path.substring(path.lastIndexOf(File.separator)+1);
 					System.err.println(fileName);
 					fileContentType = fileName.split("[.]")[1]; 
 					int index = path.indexOf(fileFileName.split("[.]")[0]);
@@ -269,19 +269,19 @@ public class FilecAction extends ActionSupport {
 //					}
 					filec = new Filec(id, fileName, fileContentType, newpath,fileTitle,fileContent,categoryId + "");
 					filecService.add(filec);
-					//½âÑ¹Ö®ºóÒª¶¯Ì¬±£´æÑ½
+					//ï¿½ï¿½Ñ¹Ö®ï¿½ï¿½Òªï¿½ï¿½Ì¬ï¿½ï¿½ï¿½ï¿½Ñ½
 			      }
 		return "success";
 	}
 
-	// »ñÈ¡ÏÂÀ­ÁÐ±í¿òÄÚÈÝ
+	// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ð±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	public void categoryList() {
-		// »ñÈ¡Ò³Ãæ»ØÓ¦
+		// ï¿½ï¿½È¡Ò³ï¿½ï¿½ï¿½Ó¦
 		HttpServletResponse response = ServletActionContext.getResponse();
-		// ±àÂë
+		// ï¿½ï¿½ï¿½ï¿½
 		response.setCharacterEncoding("utf-8");
 		List<Category> list = categoryService.getCategoryList();
-		// ×ª»»³Éjson¸ñÊ½
+		// ×ªï¿½ï¿½ï¿½ï¿½jsonï¿½ï¿½Ê½
 		JSONArray json = JSONArray.fromObject(list);
 		try {
 			response.getWriter().print(json.toString());
@@ -308,6 +308,7 @@ public class FilecAction extends ActionSupport {
 		response.setCharacterEncoding("utf-8");
 		response.setContentType("application/json; charset=utf-8");  
 		List<Filec> list = filecService.getFilecList();
+		System.err.println(list);
 //		PrintWriter out = null;  
 		List<Filec> newList = new ArrayList<>();
 		int j=1;
@@ -368,11 +369,11 @@ public class FilecAction extends ActionSupport {
 
 	public String filecUpdate() throws IOException {
 		HttpServletRequest request = ServletActionContext.getRequest();
-		// ÉèÖÃÖµ
+		// ï¿½ï¿½ï¿½ï¿½Öµ
 		List categoryList = categoryService.getCategoryList();
 		ServletActionContext.getRequest().setAttribute("categoryList",
 				categoryList);
-		// »ñÈ¡Öµ
+		// ï¿½ï¿½È¡Öµ
 		categoryId = Integer.parseInt(request.getParameter("categoryId"));
 		filecService.get(categoryId);
 //		DeCompressUtil deCompressUtil = new DeCompressUtil();
@@ -387,23 +388,23 @@ public class FilecAction extends ActionSupport {
 //			e.printStackTrace();			
 //		}
 //		file.delete();
-		// »ñÈ¡ÐèÒªÉÏ´«ÎÄ¼þµÄÎÄ¼þÂ·¾¶
+		// ï¿½ï¿½È¡ï¿½ï¿½Òªï¿½Ï´ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 		File uploadFile = new File(ServletActionContext.getServletContext()
 				.getRealPath("/"));
-		// ÅÐ¶ÏÎÄ¼þÊÇ·ñÉÏ´«£¬Èç¹ûÉÏ´«µÄ»°½«»á´´½¨¸ÃÄ¿Â¼
+		// ï¿½Ð¶ï¿½ï¿½Ä¼ï¿½ï¿½Ç·ï¿½ï¿½Ï´ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ï¿½Ä»ï¿½ï¿½ï¿½ï¿½á´´ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
 		String fileContent = fileContentType.split("[/]")[1];
 		if (FileType.isLegal(fileContent)) {
 		if (!uploadFile.exists()) {
-			uploadFile.mkdir(); // ´´½¨¸ÃÄ¿Â¼
+			uploadFile.mkdir(); // ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¿Â¼
 		}
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(
 				"yyyyMMddhhmmss");
 		fileName = fileFileName.split("[.]")[0] + "-"
 				+ simpleDateFormat.format(new Date()) + "."
 				+ fileFileName.split("[.]")[1];
-		// ÉùÃ÷ÎÄ¼þÊäÈëÁ÷£¬ÎªÊäÈëÁ÷Ö¸¶¨ÎÄ¼þÂ·¾¶
+		// ï¿½ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä¼ï¿½Â·ï¿½ï¿½
 		FileInputStream input = new FileInputStream(file);
-		// »ñÈ¡Êä³öÁ÷£¬»ñÈ¡ÎÄ¼þµÄÎÄ¼þµØÖ·¼°Ãû³Æ
+		// ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È¡ï¿½Ä¼ï¿½ï¿½ï¿½ï¿½Ä¼ï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		FileOutputStream out = new FileOutputStream(uploadFile + "\\"
 				+ fileName);
 		path = ServletActionContext.getServletContext().getRealPath("/")
@@ -418,7 +419,7 @@ public class FilecAction extends ActionSupport {
 		}
 		filecService.update(filec);
 		try {
-			byte[] b = new byte[1024];// Ã¿´ÎÐ´ÈëµÄ´óÐ¡
+			byte[] b = new byte[1024];// Ã¿ï¿½ï¿½Ð´ï¿½ï¿½Ä´ï¿½Ð¡
 			int i = 0;
 			while ((i = input.read(b)) > 0) {
 				out.write(b, 0, i);
@@ -458,7 +459,7 @@ public class FilecAction extends ActionSupport {
 			// TODO Auto-generated catch block
 			e.printStackTrace();			
 		}
-		file.delete();//É¾³ýcache
+		file.delete();//É¾ï¿½ï¿½cache
 		return "success";
 	}
 }

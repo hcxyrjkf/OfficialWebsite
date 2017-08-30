@@ -85,7 +85,7 @@ $(function () {
                  	       $('.openIframe').css('display','block');
                  	       $('.color').addClass('colorss')
                  	       $('.close').css('display','block');
-                 	       $('iframe').attr('src',"http://47.93.227.28/OfficialWebsite/"+val);
+                 	       $('iframe').attr('src',"http://localhost:8080/OfficialWebsite/"+val);
                  	   })
              	   }
            
@@ -124,7 +124,7 @@ $(function () {
                  	       $('.openIframe').css('display','block');
                  	       $('.color').addClass('colorss')
                  	       $('.close').css('display','block');
-                 	       $('iframe').attr('src',"http://47.93.227.28/OfficialWebsite/"+val);
+                 	       $('iframe').attr('src',"http://localhost:8080/OfficialWebsite/"+val);
                  	   })
              	   }
            
