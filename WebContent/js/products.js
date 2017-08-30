@@ -57,7 +57,7 @@ $(function () {
     //以下是调用上面的函数
     var mb = myBrowser();
     if ("IE" == mb) {
-//         alert("我是 IE");
+         alert("我是 IE");
         $.ajax({
             type:"POST",
             url:"filecAction_filecWebList",
@@ -65,7 +65,7 @@ $(function () {
             success: function(msg){
 //               var data = eval("("+msg+")");
                 $(msg).each(function(i,v){
-             	   if(i%2==0){
+             	   if(i%2==1){
              		   console.log(i)
              	  	   $('.color').append("<div class=\"product_list\">"
                                 +"<div class=\"product_box\">"
@@ -104,7 +104,7 @@ $(function () {
             success: function(msg){
 //               var data = eval("("+msg+")");
                 $(msg).each(function(i,v){
-             	   if(i%2==1){
+             	   if(i%2==0){
              		   console.log(i)
              	  	   $('.color').append("<div class=\"product_list\">"
                                 +"<div class=\"product_box\">"
